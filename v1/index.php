@@ -56,6 +56,8 @@ $app->get('/getAllProductByStore/:store_id', function($store_id) {
         $tmp["product_name"] = $product["product_name"];
         $tmp["product_barcode"] = $product["product_barcode"];
         $tmp["product_price"] = $product["product_price"];
+        $tmp["product_image"] = $product["product_image_url"];
+        $tmp["quantity"] = 0;
         array_push($response["products"], $tmp);
     }
     
